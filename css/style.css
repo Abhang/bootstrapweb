@@ -1295,7 +1295,7 @@ a:focus, a:hover {
 .team .team-member .member-content {
   padding: 25px 0;
 }
-.team .team-member .member-photo .member-content:hover {
+.team .team-member:hover {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
 }
