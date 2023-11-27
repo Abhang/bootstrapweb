@@ -701,6 +701,7 @@ a:focus, a:hover {
   display: unset;
 }
 
+
 /* slick arrows */
 .slick-arrow {
   position: absolute;
@@ -1155,6 +1156,11 @@ a:focus, a:hover {
   background: #28ABE3;
   color: #fff;
 }
+.services .service-block:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+}
+
 .services .service-block.color-bg i, .services .service-block.color-bg h3, .services .service-block.color-bg p {
   color: #fff;
 }
