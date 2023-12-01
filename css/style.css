@@ -483,7 +483,7 @@ a:hover {
 }
 
 .navigation .navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #28ABE3;
+  color: #28ABE3;   
 }
 
 @media (max-width: 991px) {
@@ -1314,7 +1314,7 @@ a:hover {
   Services section
 ==================================================================*/
 .services {
-  padding: 100px 0 130px;
+  padding: 100px 0 0px; /*padding: 100px 0 130px; */
 }
 
 .services .service-block.color-bg {
@@ -1666,6 +1666,38 @@ a:hover {
   padding: 12px 25px;
   margin: 15px 0;
 }
+
+.card {
+  background: #fff;
+  margin-bottom: 30px;
+  align-content: center;
+}
+
+.card:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  background: #3593ce;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.card .industry-card:hover {
+  background: #1487CE;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.card:hover img {
+  filter: invert(100%)  sepia(6%) saturate(0%) hue-rotate(265deg) brightness(1000%) contrast(100%) ; 
+  transition: 0.3s ease;
+  
+}
+
+.card:hover .card-text {
+  color: #FFFFFF;
+  transition: 0.3s ease;
+}
+
 
 /* 8.2.1 Blog Details */
 .blog-details h3 {
