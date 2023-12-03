@@ -19,14 +19,14 @@
 
 
   // navbarDropdown
-	if ($(window).width() < 992) {
-		$('#navigation .dropdown-toggle').on('click', function () {
-			$(this).siblings('.dropdown-menu').animate({
-				height: 'toggle'
-			}, 300);
-		});
+  if ($(window).width() < 992) {
+    $('#navigation .dropdown-toggle').on('click', function () {
+      $(this).siblings('.dropdown-menu').animate({
+        height: 'toggle'
+      }, 300);
+    });
   }
-  
+
   //Hero Slider
   $('.hero-slider').slick({
     autoplay: true,
@@ -45,7 +45,7 @@
   /*	Portfolio Filtering Hook
   /* =========================================================================  */
   // filter
-  setTimeout(function(){
+  setTimeout(function () {
     var containerEl = document.querySelector('.filtr-container');
     var filterizd;
     if (containerEl) {
@@ -181,5 +181,61 @@
       $('.navigation').removeClass('sticky-header');
     }
   });
+  /*
+    function abhang() {
+      var contentDiv = document.getElementById('cpg') ;
+      var cpg = "" ;
+      
+      switch(cpg){
+        case ''
+      }
+    }
+  
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all industry links
+    var industryLinks = document.querySelectorAll('.nav-tabs a');
+
+    // Add click event listener to each industry link
+    industryLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Get the industry id from the link's href attribute
+        var industryId = link.getAttribute('href').substring(1);
+
+        // Call the changeContent function with the industry id
+        changeContent(industryId);
+      });
+    });
+
+    // Initial content for the first industry (optional)
+    changeContent(industryLinks[0].getAttribute('href').substring(1));
+  });
+*/
+  function changeContent(industry) {
+    var content = '';
+
+    // Define content based on the selected industry
+    switch (industry) {
+      case 'cpg':
+        content = '<p>Content for Consumer Packaged Goods...</p>';
+        break;
+      case 'automobile':
+        content = '<p>Content for Automobile...</p>';
+        break;
+      case 'logistics':
+        content = '<p>Content for Logistics...</p>';
+        break;
+      // Add cases for other industries if needed
+
+      default:
+        content = '<p>We hold expertise for multiple industires</p>';
+    }
+
+    // Update the content in the "cpg" element
+    document.getElementById('cpg').innerHTML = content;
+  }
 
 })(jQuery);
