@@ -61,7 +61,7 @@
     infinite: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 3500
   });
 
 
@@ -214,28 +214,64 @@
     changeContent(industryLinks[0].getAttribute('href').substring(1));
   });
 */
-  function changeContent(industry) {
-    var content = '';
+  document.addEventListener('DOMContentLoaded', function () {
+    function changeContent(industry) {
+      var content = '';
 
-    // Define content based on the selected industry
-    switch (industry) {
-      case 'cpg':
-        content = '<p>Content for Consumer Packaged Goods...</p>';
-        break;
-      case 'automobile':
-        content = '<p>Content for Automobile...</p>';
-        break;
-      case 'logistics':
-        content = '<p>Content for Logistics...</p>';
-        break;
-      // Add cases for other industries if needed
+      // Define content based on the selected industry
+      switch (industry) {
+        case 'cpg':
+          content = "<p>Content for Consumer Packaged Goods...</p>";
+          break;
+        case 'automobile':
+          content = '<p>Content for Automobile...</p>';
+          break;
+        case 'logistics':
+          content = '<p>Content for Logistics...</p>';
+          break;
+        // Add cases for other industries if needed
 
-      default:
-        content = '<p>We hold expertise for multiple industires</p>';
+        default:
+          content = '<p>We hold expertise for multiple industires</p>';
+      }
+
+      // Update the content in the "cpg" element
+      document.getElementById('cpg').innerHTML = content;
     }
+    // Add click event listeners after the DOM is fully loaded
+    var industryLinks = document.querySelectorAll('.nav-tabs a');
 
-    // Update the content in the "cpg" element
-    document.getElementById('cpg').innerHTML = content;
-  }
+    industryLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        var industryId = link.getAttribute('href').substring(1);
+        changeContent(industryId);
+      });
+    });
+
+    // Initial content for the first industry (optional)
+    changeContent(industryLinks[0].getAttribute('href').substring(1));
+  });
+
+
+  $(function(){
+    $("#snippet-counter").load("snippet-counter.html");
+  });
+
+  $(function(){
+    $("#snippet-navbar").load("snippet-navbar.html");
+  });
+
+  $(function(){
+    $("#snippet-footer").load("snippet-footer.html");
+  });
+
+  $(function(){
+    $("#snippet-blogsection").load("snippet-blogsection.html");
+  });
+
+  $(function(){
+    $("#snippet-testimonial").load("snippet-testimonial.html");
+  });
 
 })(jQuery);
