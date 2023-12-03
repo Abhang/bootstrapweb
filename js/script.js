@@ -254,23 +254,23 @@
   });
 
 
-  $(function(){
+  $(function () {
     $("#snippet-counter").load("snippet-counter.html");
   });
 
-  $(function(){
-    $("#snippet-navbar").load("snippet-navbar.html");
+  $(function () {
+    $("#snippet-industryserved").load("snippet-industryserved.html");
   });
 
-  $(function(){
+  $(function () {
     $("#snippet-footer").load("snippet-footer.html");
   });
 
-  $(function(){
+  $(function () {
     $("#snippet-blogsection").load("snippet-blogsection.html");
   });
 
-  $(function(){
+  $(function () {
     $("#snippet-testimonial").load("snippet-testimonial.html");
   });
 
