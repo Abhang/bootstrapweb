@@ -155,6 +155,10 @@ a:hover {
   padding-bottom: 30px;
 }
 
+.section-sm5 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
 .section-xs {
   padding: 40px 0;
 }
