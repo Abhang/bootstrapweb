@@ -881,10 +881,23 @@ background: rgba(40, 171, 227, 0.4);
   -webkit-box-shadow: 0 5px 65px 0 rgba(255, 255, 255, 0.35);
    transition: 0.3s ease;
 }
+
+@media (max-width: 767px) {
+  .carousel-caption {
+    text-align: top;
+    transform: translate(-50%, -80%);
+    left: 50%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .carousel-caption p,
+  .carousel-caption h5 {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+}
+
 .carousel-caption .p{
   background: rgba(18, 83, 110, 0.5);
   color: #fff;
-    
   align-items: center;
   justify-content: center;
   text-align: center;
