@@ -137,7 +137,7 @@
   /* ========================================================================= */
   /*	On scroll fade/bounce effect
   /* ========================================================================= */
-  var scroll = new SmoothScroll('a[href*="#"]');
+  var scroll = new SmoothScroll('a[href*="#"]:not(.carousel-control-prev, .carousel-control-next)');
 
   // -----------------------------
   //  Count Up

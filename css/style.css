@@ -808,7 +808,90 @@ a:hover {
   display: unset;
 }
 
+/*
+.bd-example {
+  background: rgba(18, 83, 110, 0.5);
+  transition: 0.2s ease;
+  height: 400px;
+  width: 700px;
+}
 
+
+.bd-example .imagec {
+  background: rgba(18, 83, 110, 1);
+  transition: 0.2s ease;
+background: rgba(40, 171, 227, 0.4);
+}*/
+
+.carousel-item {
+  position: relative;
+  height: 400px ;
+
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease;
+  z-index: 1;
+}
+
+.carousel-item img {
+  z-index: 2;
+  object-fit: cover; /* This property ensures the image covers the entire container, cropping as needed */
+  object-position: center top; /* This positions the image at the bottom center */
+  height: 100%; /* Ensure the image takes up the full height of the container */
+
+}
+
+.bd-example .imagec {
+  position: relative;
+}
+
+.bd-example .imagec::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.bd-example .imagec img {
+  z-index: 2;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white; /* Set text color */
+  background: rgba(0, 0, 0, 0.4);
+}
+.carousel-caption:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(255, 255, 255, 0.35);
+   transition: 0.3s ease;
+}
+.carousel-caption .p{
+  background: rgba(18, 83, 110, 0.5);
+  color: #fff;
+    
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.carousel-caption .para2{
+  color: #fff;
+}
 /* slick arrows */
 .slick-arrow {
   position: absolute;
