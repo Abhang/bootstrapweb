@@ -59,18 +59,18 @@
   <!--
 Fixed Navigation
 ==================================== -->
-<div id="snippet-navbar"></div>
-	
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-  $(function () {
-    $("#snippet-navbar").load("snippet-navbar.html", function () {
-      // Add the "active" class to the Home tab
-      $(".nav-item:has(a[href='contact.html'])").addClass(" active");
-    });
-  });
+  <div id="snippet-navbar"></div>
 
-</script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $(function () {
+      $("#snippet-navbar").load("snippet-navbar.html", function () {
+        // Add the "active" class to the Home tab
+        $(".nav-item:has(a[href='contact.html'])").addClass(" active");
+      });
+    });
+
+  </script>
   <!--
 End Fixed Navigation
 ==================================== -->
@@ -180,72 +180,18 @@ End Fixed Navigation
   <!--================================
 =            Google Map            =
 =================================-->
-  <div class="google-map">
+ <!-- 
+   <div class="google-map">
     <div id="map_canvas" class="map_canvas" data-latitude="19.206356979911003" data-longitude="72.96023949078652"
       data-marker="images/marker.png" data-marker-name="ASMS Global"></div>
   </div>
+  -->
   <!--====  End of Google Map  ====-->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7012.186571821551!2d-81.32772820546332!3d28.506840949990597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e764bc1a2d39df%3A0xcd7245377f04ae7c!2s3100%20McEwan%20Ln%2C%20Orlando%2C%20FL%2032812%2C%20USA!5e0!3m2!1sen!2sin!4v1701836878928!5m2!1sen!2sin"
+    class="rounded w-100" style="height: 425px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  <footer id="footer" class="bg-one">
-    <div class="top-footer">
-      <div class="container">
-        <div class="row justify-content-around">
-          <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
-            <h3>about</h3>
-            <p>At ASMS Global, we are the driving force behind intelligent sourcing analysis and cost
-              management. Our story in one of the relentless dedication to helping businesses, large and
-              small, navigate the complexities of procurement with finesse.</p>
-          </div>
-          <!-- End of .col-sm-3 -->
-
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <ul>
-              <li>
-                <h3>Our Services</h3>
-              </li>
-              <li><a href="supplychain.html">Supply Chain Consulting</a></li>
-              <li><a href="procurement.html">Procurement and Strategic Sourcing</a></li>
-              <li><a href="managedservices.html">Managed Services</a></li>
-              <li><a href="bookkeeping.html">Bookkeeping</a></li>
-            </ul>
-          </div>
-          <!-- End of .col-sm-3 -->
-
-          <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
-            <ul>
-              <li>
-                <h3>Quick Links</h3>
-              </li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="service.html">Services</a></li>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <!-- End of .col-sm-3 -->
-
-          <div class="col-lg-3 col-md-6">
-            <ul>
-              <li>
-                <h3>Connect with Us</h3>
-              </li>
-              <li><a href="https://www.facebook.com/asmsglobal/">Facebook</a></li>
-              <li><a href="https://www.twitter.com/asmsglobal/">Twitter</a></li>
-              <li><a href="https://www.youtube.com/channel/asmsglobal">Youtube</a></li>
-              <li><a href="mailto:contact@asmsglobal.com">E-Mail</a></li>
-            </ul>
-          </div>
-          <!-- End of .col-sm-3 -->
-
-        </div>
-      </div> <!-- end container -->
-    </div>
-    <div class="footer-bottom">
-      <h5>&copy; Copyright 2023. All rights reserved.</h5>
-      <h6>Design and Developed by <a href="https://www.asmsglobal.com/">ASMS Global Technology Team</a></h6>
-    </div>
-  </footer> <!-- end footer -->
-
+  <div id="snippet-footer"></div>
 
   <!-- end Footer Area
 ========================================== -->
