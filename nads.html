@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>PD ke Liye</title>
+	<title>Geolocation</title>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 
@@ -23,7 +23,7 @@
 
 	<script>
 
-		var map = L.map('map').setView([52.20046812625617, 0.12105590173992442], 11);
+		var map = L.map('map').setView([28.44882182140647, 76.99247689465354], 11);
 		mapLink = "<a href='http://openstreetmap.org'>OpenStreetMap</a>";
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: 'Leaflet &copy; ' + mapLink + ', contribution', maxZoom: 18 }).addTo(map);
 
@@ -32,14 +32,14 @@
 			iconSize: [30, 30]
 		})
 
-		var marker = L.marker([52.20046812625617, 0.12105590173992442], { icon: taxiIcon }).addTo(map);
+		var marker = L.marker([28.44882182140647, 76.99247689465354], { icon: taxiIcon }).addTo(map);
 
 		map.on('click', function (e) {
 			console.log(e)
 			var newMarker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
 			L.Routing.control({
 				waypoints: [
-					L.latLng(52.20046812625617, 0.12105590173992442),
+					L.latLng(28.44882182140647, 76.99247689465354),
 					L.latLng(e.latlng.lat, e.latlng.lng)
 				]
 			}).on('routesfound', function (e) {

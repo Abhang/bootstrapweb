@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Mumbai Map</title>
+
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="leaflet.css" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+
+	<!-- jQuery, Popper.js, and Bootstrap JS -->
+	<script src="jquery-3.3.1.slim.min.js"></script>
+	<script src="popper.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+
+	<style>
+		#map {
+			height: 500px;
+			width: 1000px;
+		}
+	</style>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Quick Start - Leaflet</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 5px;
+		}
+
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Quick Start - Leaflet</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+		}
+
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>ASMS Global | Supply Chain and Procurement Consulting</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="One page parallax responsive HTML Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="author" content="ASMS Global">
+	<meta name="generator" content="ASMS Global">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<!-- CSS
+  ================================================== -->
+	<!-- Themefisher Icon font -->
+	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<!-- Lightbox.min css -->
+	<link rel="stylesheet" href="plugins/lightbox2/css/lightbox.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="plugins/animate/animate.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="body">
+
+	<!--
+  Start Preloader
+  ==================================== -->
+	<div id="preloader">
+		<div class='preloader'>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!--
+  End Preloader
+  ==================================== -->
+
+	<!--
+Fixed Navigation
+==================================== -->
+	<div id="snippet-navbar"></div>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(function () {
+			$("#snippet-navbar").load("snippet-navbar.html", function () {
+				// Add the "active" class to the Home tab
+				$(".nav-item:has(a[href='index.html'])").addClass(" active");
+			});
+		});
+	</script>
+
+	<!--
+End Fixed Navigation
+==================================== -->
+
+	<!--
+Bradcrums
+==================================== -->
+	<section class="single-page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Services</h2>
+					<ol class="breadcrumb header-bradcrumb justify-content-center">
+						<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+						<li class="breadcrumb-item" aria-current="page"><a href="service.html"
+								class="text-white">ASM</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Bike Ride</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--
+End Bradcrums
+==================================== -->
+
+
+	<!--
+Start Maps
+==================================== -->
+	<section class="services" id="services">
+		<div class="container justify-content-center">
+
+			<div class="container mt-5 justify-content-center">
+				<h1 class="text-center mb-4">Mumbai Map</h1>
+
+				<!-- Map Container -->
+				<div id="map"></div>
+			</div>
+
+			<!-- jQuery, Popper.js, and Bootstrap JS -->
+			<script src="jquery-3.3.1.slim.min.js"></script>
+			<script src="popper.min.js"></script>
+			<script src="bootstrap.min.js"></script>
+
+			<!-- Leaflet JS -->
+			<script src="leaflet.js"></script>
+
+			<!-- <script>
+				document.addEventListener("DOMContentLoaded", function () {
+					// Initialize the map
+					var map = L.map('map').setView([19.175188, 72.967048], 12);
+					var marker = L.marker([19.175188, 72.967048]).addTo(map);
+
+					// Add the tile layer (OpenStreetMap)
+					L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+						attribution: ' <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					}).addTo(map);
+
+					fetch('assets/map.geojson')  // Replace with the actual path to your GeoJSON file
+						.then(response => response.json())
+						.then(data => {
+							L.geoJSON(data).addTo(map);
+						});
+
+					// Marker for Mumbai
+					var lineString = L.geoJSON(gpxData).getLayers()[0].toGeoJSON();
+					function onMapClick(e) {
+						popup
+							.setLatLng(e.latlng)
+							.setContent(`You clicked the map at ${e.latlng.toString()}`)
+							.openOn(map);
+					}
+
+					map.on('click', onMapClick);
+					const popup = L.popup()
+						.setLatLng([51.513, -0.09])
+						.setContent('I am a standalone popup.')
+						.openOn(map);
+					// Animate the line
+					/*  lineString.geometry.coordinates.forEach(function (coord, i) {
+						  setTimeout(function () {
+								map.panTo([coord[1], coord[0]]);
+						  }, 100 * i); 
+					 }); */
+				}); 
+			</script> -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					// Initialize the map
+					var map = L.map('map').setView([19.175188, 72.967048], 12);
+					var marker = L.marker([19.175188, 72.967048]).addTo(map);
+			
+					// Add the tile layer (OpenStreetMap)
+					L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+						attribution: ' <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					}).addTo(map);
+			
+					// Load GeoJSON data
+					fetch('assets/map.geojson')  // Replace with the actual path to your GeoJSON file
+						.then(response => response.json())
+						.then(data => {
+							L.geoJSON(data).addTo(map);
+						});
+			
+					// Marker for Mumbai
+					var lineString = L.geoJSON(gpxData).getLayers()[0].toGeoJSON();
+					function onMapClick(e) {
+						popup
+							.setLatLng(e.latlng)
+							.setContent(`You clicked the map at ${e.latlng.toString()}`)
+							.openOn(map);
+					}
+					lineString.geometry.coordinates.forEach(function (coord, i) {
+						  setTimeout(function () {
+							L.marker([coord[1], coord[0]]).addTo(map);
+						  }, 100 * i); 
+					 });
+					map.on('click', onMapClick);
+					const popup = L.popup()
+						.setLatLng([51.513, -0.09])
+						.setContent('I am a standalone popup.')
+						.openOn(map);
+				});
+			</script>
+			
+
+		</div> <!-- End container -->
+	</section> <!-- End section -->
+	<!--
+END Maps
+==================================== -->
+
+	<!--
+END Blog Section
+=========================================== -->
+
+	<!--
+Start Footer
+=========================================== -->
+	<div id="snippet-footer"></div>
+
+	<!-- end Footer Area
+========================================== -->
+
+	<!-- 
+    Essential Scripts
+    =====================================-->
+	<!-- Main jQuery -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap4 -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- Parallax -->
+	<script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
+	<!-- lightbox -->
+	<script src="plugins/lightbox2/js/lightbox.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- filter -->
+	<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+	<!-- Smooth Scroll js -->
+	<script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+	<script src="plugins/google-map/gmap.js"></script>
+
+	<!-- Custom js -->
+	<script src="js/script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
