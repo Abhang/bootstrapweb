@@ -52,7 +52,7 @@
 			<span></span>
 		</div>
 	</div>
-	<!--
+	<!-- 
   End Preloader
   ==================================== -->
 
@@ -61,16 +61,17 @@ Fixed Navigation
 ==================================== -->
 	<div id="snippet-navbar"></div>
 
-	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="/added/jquery-3.6.4.min.js"></script>
 	<script>
 		$(function () {
-			$("#snippet-navbar").load("snippet-navbar.html", function () {
-				// Add the "active" class to the Home tab
-				$(".nav-item:has(a[href='index.html'])").addClass(" active");
-			});
+		   $.get("snippet-navbar.html", function (data) {
+			  $("#snippet-navbar").html(data);
+			  $("a[href='index.html']").parent('.nav-item').addClass("active");
+			  console.log("Active class added");
+		   });
 		});
-
-	</script>
+	 </script>
+	 
 	<!--
 End Fixed Navigation
 ==================================== -->
@@ -239,9 +240,9 @@ Start About Section
 	</section> <!-- End section -->
 	<!-- Start Testimonial
 =========================================== -->
-<div id="snippet-testimonial" class="mb-4"></div>
-	 <!-- End Section https://source.unsplash.com/1200x800/?fastfood -->
-	 <div class="border"></div>
+	<div id="snippet-testimonial" class="mb-4"></div>
+	<!-- End Section https://source.unsplash.com/1200x800/?fastfood -->
+	<div class="border"></div>
 	<!--
 Start Call To Action
 ==================================== -->
@@ -299,3 +300,13 @@ Start Blog Section
 </body>
 
 </html>
+<!-- <script>
+		$(function () {
+			$("#snippet-navbar").load("snippet-navbar.html", function () {
+				// Add the "active" class to the Home tab
+				$("a[href='index.html']").parent('.nav-item').addClass("active");
+				console.log("Active class added");
+			});
+		});
+
+	</script> -->
