@@ -274,4 +274,8 @@
     $("#snippet-testimonial").load("snippet-testimonial.html");
   });
 
+  $(function () {
+    $("#snippet-navbar").load("snippet-navbar.html");
+  });
+
 })(jQuery);
