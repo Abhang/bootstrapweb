@@ -59,16 +59,16 @@
 	<!--
 Fixed Navigation
 ==================================== -->
-<div id="snippet-navbar"></div>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script>
-	$(function () {
-		$("#snippet-navbar").load("snippet-navbar.html", function () {
-			// Add the "active" class to the Home tab
-			$(".nav-item:has(a[href='service.html'])").addClass(" active");
+	<div id="snippet-navbar"></div>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(function () {
+			$("#snippet-navbar").load("snippet-navbar.html", function () {
+				// Add the "active" class to the Home tab
+				$(".nav-item:has(a[href='service.html'])").addClass(" active");
+			});
 		});
-	});
-</script>
+	</script>
 	<!--
 End Fixed Navigation
 ==================================== -->
@@ -79,7 +79,7 @@ Bradcrums
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Services</h2>
+					<h2>Supply Chain Consulting</h2>
 					<ol class="breadcrumb header-bradcrumb justify-content-center">
 						<li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
 						<li class="breadcrumb-item" aria-current="page"><a href="service.html"
@@ -93,7 +93,7 @@ Bradcrums
 	<!--
 End Bradcrums
 ==================================== -->
-
+	
 	<!--
 Start Services
 ==================================== -->
@@ -190,22 +190,122 @@ Start Services
 					</div>
 				</div>
 				<!-- End Single Service Item -->
-
+				<div class="border"></div>
 			</div> <!-- End row -->
 		</div> <!-- End container -->
 	</section> <!-- End section -->
 	<!--
 END Services
 ==================================== -->
+
 	<!--
 START Industries Served
 ==================================== -->
-
-<div id="snippet-industryserved"></div>
+<section class="services" id="services">
+	<div class="row justify-content-center">
+		<!-- section title -->
+		<div class="col-xl-6 col-lg-8">
+			<div class="title text-center">
+				<h2>The ASMS Approach</h2>
+				<p></p>
+				<div class="border"></div>
+			</div>
+		</div>
+		<!-- /section title -->
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-3" style="border-right: 2px solid #47cbf7">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+						role="tab" aria-controls="v-pills-home" aria-selected="true">Assessment</a>
+					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+						role="tab" aria-controls="v-pills-profile" aria-selected="false">Strategy Development</a>
+					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+						role="tab" aria-controls="v-pills-messages" aria-selected="false">Process Optimization</a>
+					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+						role="tab" aria-controls="v-pills-settings" aria-selected="false">Implementation
+						Planning</a>
+					<a class="nav-link" id="v-pills-execution-tab" data-toggle="pill" href="#v-pills-execution"
+						role="tab" aria-controls="v-pills-execution" aria-selected="false">Execution and
+						Monitoring</a>
+					<a class="nav-link" id="v-pills-continuousimprovement-tab" data-toggle="pill" href="#v-pills-continuousimprovement"
+						role="tab" aria-controls="v-pills-continuousimprovement" aria-selected="false">Continuous
+						Improvement</a>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+						aria-labelledby="v-pills-home-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-ion-ios-search"></i>
+							</div>
+							<h3>Evaluate existing supply chain processes and identify areas for improvement. Collect
+								data on inventory management, logistics, and supplier relationships.</h3>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+						aria-labelledby="v-pills-profile-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-strategy"></i>
+							</div>
+							<h3>Formulate a targeted supply chain strategy to address identified challenges. Emphasize improvements in cost efficiency, lead times, and overall effectiveness.
+							</h3>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+						aria-labelledby="v-pills-messages-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-ion-ios-navigate-outline"></i>
+							</div>
+							<h3>Identify and implement process improvements within the supply chain. Streamline workflows and enhance efficiency without a primary focus on technology.
+							</h3>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+						aria-labelledby="v-pills-settings-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-ion-ios-fastforward-outline"></i>
+							</div>
+							<h3>Develop a clear plan for executing process improvements. Allocate resources effectively and establish realistic timelines.
+							</h3>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-execution" role="tabpanel"
+						aria-labelledby="v-pills-execution-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-ion-ios-checkmark-outline"></i>
+							</div>
+							<h3>Implement the optimized processes according to the established plan.
+								Monitor key performance indicators (KPIs) to track the impact of changes.
+								</h3>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="v-pills-continuousimprovement" role="tabpanel"
+						aria-labelledby="v-pills-continuousimprovement-tab">
+						<div class="service-block p-4 text-center">
+							<div class="service-icon text-center">
+								<i class="tf-ion-ios-bookmarks-outline"></i>
+							</div>
+							<h3>Regularly assess the performance of the optimized processes. Make ongoing adjustments based on feedback and changing business requirements.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+	<div id="snippet-industryserved"></div>
 	<!--
 END Industries Served
 ==================================== -->
-<div id="snippet-counter"></div>	
+	<div id="snippet-counter"></div>
 
 
 
