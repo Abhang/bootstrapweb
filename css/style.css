@@ -1427,6 +1427,13 @@ background: rgba(40, 171, 227, 0.4);
   -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
 }
 
+.nav-link:hover {
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+
 .services .service-block.color-bg i,
 .services .service-block.color-bg h3,
 .services .service-block.color-bg p {
