@@ -237,9 +237,6 @@
     $("#snippet-testimonial").load("snippet-testimonial.html");
   });
 
-  $(function () {
-    $("#snippet-testimonial2").load("snippet-testimonial2.html");
-  });
 
 
 })(jQuery);

@@ -874,7 +874,7 @@ background: rgba(40, 171, 227, 0.4);
   transform: translate(-50%, -50%);
   z-index: 2;
   color: white; /* Set text color */
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
 }
 .carousel-caption:hover {
   box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
@@ -891,7 +891,7 @@ background: rgba(40, 171, 227, 0.4);
   }
   .carousel-caption p,
   .carousel-caption h5 {
-    font-size: auto; /* Adjust the font size as needed */
+    font-size: 12px; /* Adjust the font size as needed */
   }
 }
 
