@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ASMS Global </title>
+<script>
+function redirect() {
+  if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    // Redirect to specific Meet link in Meets app for mobile devices
+    window.location.href = "gmeet://mpa-fajr-fyf";
+  } else if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // Redirect to www.abha.ng for laptops and desktops
+    window.location.href = "googlemeet://meet.google.com/mpa-fajr-fyf";
+  } else {
+    // Redirect to www.abha.ng for laptops and desktops
+    window.location.href = "https://meet.google.com/mpa-fajr-fyf";
+  }
+}
+
+redirect(); // Call the redirect function immediately
+</script>
+</head>
+<body>
+<p>ASMS Global </p>
+</body>
+</html>
